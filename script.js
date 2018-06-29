@@ -100,3 +100,87 @@ b = changeLocal();
 // so a would still = a
 // and b would == return value from changeLocal
 // which would be 2
+
+// conditions
+
+// using boolean values
+// checks if aTrue exists
+
+var aTrue = true;
+
+if (aTrue) {
+
+  console.log('yes');
+}
+
+// doesnt exist
+
+if (!aTrue) {
+
+  console.log('no');
+}
+
+var aFalse = false;
+
+if (!aFalse) {
+
+  console.log('true');
+} else {
+
+  console.log('false');
+}
+
+// comparisons
+
+var compA = 2;
+var compB = 4;
+var compC;
+
+// can also do else if etc
+if (compB > compA) {
+  compC = 'true';
+} else {
+  compC = 'false';
+}
+
+// can be compacted into ternary statements
+// only to compare - use if else to run additional code
+// can also do multiple comparisons
+
+var compD = (compB > compA) ? 'true' : 'false';
+
+// compD = string 'true'
+
+// can return bool or int etc
+var compE = (compB > compA) ? true : false;
+
+// compE = bool true
+
+var compF = (compB == compA) ? 10 : 99;
+
+// compF = 99
+
+function ageCheck(age, country) {
+  var response;
+  if (country == 'uk') {
+    response = age > 18 ? true : false;
+  } else if (country == false) {
+    response = 'no country';
+  } else {
+    response = 'none of the above';
+  }
+
+  return response;
+}
+
+ageCheck(10, 'uk');
+
+// returns false
+
+ageCheck(21, 'uk');
+
+// returns true
+
+ageCheck(21);
+
+// retunrs none of the above
