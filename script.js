@@ -217,3 +217,22 @@ function myCounter(a, b) {
     console.log(' b (' + b + ') is bigger than a (' + a + ')');
   }
 }
+
+// source code loops
+// working with the DOM (document object model) ie <body> </body>
+
+// using document and console.log(document) in the console
+
+var headingTag = document.querySelector('h1');
+headingTag.innerhtlm = 'interacted tag';
+
+// get all paragraphs var p = document.querySelectorAll('p')
+// then can get elements p[15].innerhtlm etc
+
+// can also use classes same as css
+
+// go to sites and update DOM - try a few see what hppens
+// only active in current instance - if you refresh it reload etc etc...
+
+// check out developer.mozilla.org
+// check out codepen.io
