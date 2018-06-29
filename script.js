@@ -184,3 +184,36 @@ ageCheck(21, 'uk');
 ageCheck(21);
 
 // retunrs none of the above
+
+// loops
+// counts through until x !< 10
+
+for (x = 0; x < 10; x++) {
+  console.log('count ' + (x + 1));
+}
+
+var y = 0;
+while (y < 11) {
+  console.log('count ' + y);
+  y++;
+}
+
+// if y was set to 12 nothing would happen
+// so use do
+
+var z = 79;
+do {
+  console.log('z = ' + z);
+  z++;
+} while (z < 101);
+
+function myCounter(a, b) {
+  if (a > b) {
+    do {
+      console.log('a = ' + a);
+      a--;
+    }  while (a > b);
+  } else {
+    console.log(' b (' + b + ') is bigger than a (' + a + ')');
+  }
+}
